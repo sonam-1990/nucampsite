@@ -1,0 +1,53 @@
+nav{
+    color:rgb(71, 52, 90);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: auto;
+
+}
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+
+    color:white;
+    font-size: 40px;
+    text-align: center;
+    background: purple;
+    border-radius: 10px;
+    padding: 12px;
+}
+h2{
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: purple;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 10px;
+    
+    text-align: right;
+  }
+table{
+    width:50%;
+    text-align: center;
+    border: solid ;
+    padding: 10px;
+    margin: 10px;
+    
+}
+section{
+    
+    background-color:#b4eeca;
+    border: solid darkblue 5px;
+    width:800px;
+    margin-bottom: 10px;
+    
+}
+table tr{
+    border: solid;
+    color:brown;
+}
