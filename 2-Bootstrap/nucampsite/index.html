@@ -27,10 +27,19 @@
 
                 </div>
                 <div class="col">
+
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+
+
+                <div class="  col-md-4 col-xl-2 mt-4 ">
+                    <a href="#reserveForm" class="btn btn-info text-nowrap  ">Reserve Campsite</a>
+                </div>
+
             </div>
+
+
         </div>
     </header>
 
@@ -80,13 +89,23 @@
     </div>
 
     <div class="row row-content align-items-center">
-        <div class="col-sm-4 order-sm-4 col-m-3">
-            <h2 class="text-sm-right">Featured Campsites</h2>
+        <div class="col-sm-4  col-m-3 ">
+            <h2 class="text-sm-right  ">Featured Campsites</h2>
         </div>
         <div class="col">
-            <h3>React Lake Campground</h3>
-            <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the
-                shores of the pristine React Lake is a favorite for fly fishers.</p>
+            <div class="media">
+                
+                <div class="media-body align-self-centre">
+                  
+                    <h3>React Lake Campground</h3>
+                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on
+                        the
+                        shores of the pristine React Lake is a favorite for fly fishers.</p>
+                    
+
+                </div>
+                <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake Campground" />
+            </div>
         </div>
     </div>
 
@@ -96,7 +115,7 @@
         </div>
         <div class="col">
             <div class="media">
-                <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                <img class="d-flex ml-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
                 <div class="media-body align-self-centre">
                     <h3>Bootstrap Outfitters</h3>
                     <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you
@@ -106,6 +125,51 @@
             </div>
         </div>
     </div>
+    <div class=" row row-content">
+        <div class="col-sm-6 mx-auto">
+            <div class="card">
+                <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+                <div class="card-body">
+                    <form action="" id="reserveForm">
+                        <div class="row form-group">
+                            <label for="numCampers" class="col-sm-6 col-form-label">Number of Campers</label>
+                            <div class="col">
+                                <select name="numCampers" id="numCampers" class="form-control">
+                                    <option value="">Select..</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="">4</option>
+                                    <option value="">5</option>
+                                    <option value="">6</option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+                        <div class="row form-group">
+                            <label for="date" class="col col-form-label">Date</label>
+                            <div class="col-sm-6">
+                                <input type="date" id="date" placeholder="" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class=" btn btn-primary">Search</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
 
     <footer class="site-footer">
         <div class="container">
@@ -145,6 +209,17 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        CheckMyCode = {
+            'key': 'dKS3sdf9Ab',
+            'courseid': 'boot.nucamp',
+            'author': 'Sonam Dhobale',
+            'assignment': 'week2'
+        }
+    </script>
+    <script  src="https://cmc.sparrowweb.net/checkmycode.js"></script>"></script>
+
 
 
 </body>
