@@ -81,12 +81,12 @@
                             </div>
                             <div class="row form-group">
                                 <label for="campsiteType" class="col-sm-6 col-form-">Campsite Type</label>
-                                <div class="col-2 btn-group btn-group-toggle"data-toggle="buttons">
+                                <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-success active">
-                                        <input type="radio" name="siteType" id="siteTent" value="tent" autocomplete="off" checked> Tent
+                                        <input type="radio" name="siteType" id="siteTent"  autocomplete="off" checked> Tent
                                       </label>
                                       <label class="btn btn-primary">
-                                        <input type="radio" name="siteType" id="siteRV"  value="tent"autocomplete="off"> RV
+                                        <input type="radio" name="siteType" id="siteRV"  autocomplete="off"> RV
                                       </label>
                                      
                                 </div>
@@ -94,7 +94,7 @@
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <button type="submit" class=" btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class=" btn btn-secondary" data-dismiss="modal">Cancel</button>
                                     <button type="submit" class=" btn btn-primary">Search</button>
                                 </div>
                             </div>
@@ -354,32 +354,8 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     
-    <script>
-        $(function (){
-            $(".carousel").carousel({interval :2000,  pause: "false"});
-                $("#carouselButton").click(function(){
-                    if ($("#carouselButton").children("i").hasClass("fa-pause")){
-                        $(".carousel").carousel("pause");
-                        $("#carouselButton").children("i").removeClass("fa-pause");
-                        $("#carouselButton").children("i").addClass("fa-play");
-                    }
-                    else{
-                        $(".carousel").carousel("cycle"); 
-                        $("#carouselButton").children("i").removeClass("fa-play");
-                        $("#carouselButton").children("i").addClass("fa-pause");
-                    }
-
-                
-            
-        
-                    
-                    
-               
-
-                    
-                });
-                
-        });
+    <script src="js/script.js">
+       
     </script>
       
 
