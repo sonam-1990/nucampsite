@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Breadcrumb, BreadcrumbItem, Button, Label, Col,Row  } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { Control, Form,Errors,actions } from 'react-redux-form';
+import { Control, Form,Errors } from 'react-redux-form';
 
 
 const required = val => val && val.length;
@@ -23,6 +23,7 @@ class Contact extends Component {
             agree: false,
             contactType: 'By Phone',
             feedback: '',
+           
             touched: {
                 firstName: false,
                 lastName: false,
@@ -38,9 +39,10 @@ class Contact extends Component {
         
    
     handleSubmit(values) {
-        console.log('Current state is: ' + JSON.stringify(values));
-        alert('Current state is: ' + JSON.stringify(values));
+       // console.log('Current state is: ' + JSON.stringify(values));
+       // alert('Current state is: ' + JSON.stringify(values));
         this.props.resetFeedbackForm();
+        this.props.postFeedback(values);
         
     }
 
