@@ -1,0 +1,104 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  
+  
+ }
+
+ h1,h2, h3 {
+  font-family:"Lobster", cursive ;
+  color:rgb(55, 220, 241);
+ 
+  
+  
+ }
+ h1{
+   margin-left: 5px;
+   font-weight: bold;
+   color:black;
+   
+ }
+ 
+
+h2 {
+
+  color: #7130c5; }
+
+header h2 {
+  color:black; }
+
+.site-footer {
+  background-image: linear-gradient(#a6e3e9, white);
+  padding: 20px 0; 
+  
+}
+
+.jumbotron {
+  margin: auto;
+  text-align:left;
+  padding-top:40px ;
+  
+  
+  background-color:#cbf1f5;
+  color: black;
+  
+ }
+
+.row-content {
+  padding: 50px 0;
+  border-bottom: 1px ridge;
+  min-height: 100px; }
+
+.navbar {
+  background-color:rgb(106, 78, 211);
+  
+ }
+
+.tab-content {
+  border: 1px solid rgb(221, 221, 221);
+  border-top: none;
+  padding: 10px; }
+
+.carousel-caption {
+  background-color:rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: solid black;
+  margin:0;
+ 
+  
+  }
+
+#carouselButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 100; }
+
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
+  
+  
+ 
+  
+  #loginModal .modal-header {
+    background-color:  rgb(106, 78, 211);
+    color: white; }
+  
+  
