@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@react-native-community/datetimepicker": "3.2.0",
     "expo": "41",
     "react": "16.13.1",
     "react-dom": "16.13.1",
