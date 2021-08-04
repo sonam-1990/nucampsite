@@ -53,7 +53,7 @@ class Favorites extends Component {
                                 },
                             ],
                            
-                         //   { cancelable: false }
+                           { cancelable: false }
                          )
                         }
                         >
