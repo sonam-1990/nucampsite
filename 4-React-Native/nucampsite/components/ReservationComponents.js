@@ -29,9 +29,9 @@ class Reservation extends Component{
     }*/
    handleReservation() {
         console.log(JSON.stringify(this.state));
-      //  this.toggleModal();
+    
         Alert.alert(
-            'Begin to Search?',
+            'Begin Search?',
             `Number OF campers : ${this.state.campers}\n \n Hike in: ${this.state.hikeIn}\n \n Date: ${this.state.date}` ,
            
             [
@@ -106,7 +106,7 @@ class Reservation extends Component{
                         onChange={(event, selectedDate) => {
                             selectedDate && this.setState({date: selectedDate, showCalendar: false});
                         }}
-                        style={styles.formItem}
+                       style={styles.formItem}
                     />
                 )}
                 <View style={styles.formRow}>
