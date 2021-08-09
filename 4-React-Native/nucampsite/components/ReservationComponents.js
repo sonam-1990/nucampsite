@@ -106,7 +106,7 @@ class Reservation extends Component{
                         onChange={(event, selectedDate) => {
                             selectedDate && this.setState({date: selectedDate, showCalendar: false});
                         }}
-                       style={styles.formItem}
+                        style={styles.formItem}
                     />
                 )}
                 <View style={styles.formRow}>
