@@ -329,17 +329,20 @@ class Main extends Component {
         this.props.fetchComments();
         this.props.fetchPromotions();
         this.props.fetchPartners();
+        this.showNetInfo();
 
-        NetInfo.fetch().then(connectionInfo =>{  //listening at once
+    }
+    showNetInfo = async () => {
+      // await NetInfo.fetch().then(connectionInfo =>{  
+          const connectionInfo = await NetInfo.fetch();{  //listening at once
             (Platform.OS ==='ios')?
             Alert.alert('Initial Network Connectivity Type:',connectionInfo.type ):
             ToastAndroid.show('Initial Network Connectivity Type:'+connectionInfo.type ,
             ToastAndroid.LONG);
-        });
+        };
         this.unsubscribeNetInfo = NetInfo.addEventListener(connectionInfo => {
             this.handleConnectivityChange(connectionInfo);
         });
-
     }
     componentWillUnmount() {
        this.unsubscribeNetInfo();    //stop listening as soon as main component loads.
