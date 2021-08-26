@@ -1,5 +1,6 @@
-const rectangle = require('./rectangle');
+//const rectangle = require('./rectangle');
 const rect = require('./rectangle');
+
 
 function solveRect(l, w){
     console.log(`Solving for rectangle with dimensions: ${l}, ${w}`);
