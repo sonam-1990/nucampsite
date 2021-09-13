@@ -6,7 +6,7 @@ const passport = require('passport');
 const authenticate = require('../authenticate');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/',authenticate.verifyUser,authenticate.verifyAdmin, function(req, res, next) {
   res.send('respond with a resource');
 });
 
