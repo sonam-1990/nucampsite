@@ -41,7 +41,7 @@ server.on('listening', onListening);
    cert:fs.readFileSync(__dirname+'/server.cert')          //certificate which contains certified public key.
  };
 
- const secureServer = http.createServer(options, app);
+ const secureServer = https.createServer(options, app);
 
  /**
  * Listen on provided port, on all network interfaces.
